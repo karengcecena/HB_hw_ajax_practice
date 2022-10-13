@@ -18,9 +18,11 @@ def profile():
 
     fullname = request.json['name']
     # TODO: get the values from the rest of the form
+    age = request.json['age']
+    occupation = request.json["occupation"]
+       
     # Add them to jsonify
-    
-    return jsonify({'fullname': fullname, })
+    return jsonify({'fullname': fullname, 'age': age, 'occupation': occupation})
 
 
 
